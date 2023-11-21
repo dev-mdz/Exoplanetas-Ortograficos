@@ -6,7 +6,7 @@
 }
 
 body{
-    background: url(/multimedia/fondo-con-sombra.png);  
+    background: url(fondo-con-sombra.png);  
     background-size:cover;
     background-position: center; 
     display: flex;
