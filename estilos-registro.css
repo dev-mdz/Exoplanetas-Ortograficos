@@ -1,0 +1,111 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+body{
+    background: url(/multimedia/fondo-con-sombra.png);  
+    background-size:cover;
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+}
+
+.box{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: #49c751;
+    border-style: outset;
+    border-radius: 10px;
+    overflow: hidden;
+    opacity: 0.9;
+}
+
+
+.form{
+    background-size: cover;
+    opacity: 2;
+    position: absolute;
+    inset: 2px;
+    border-radius: 20px;
+    z-index: 9;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form h2{
+    font-size: 35px;
+    color: #3d1795;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-style: italic;
+}
+
+.inputBox{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+
+.inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline-style: auto;
+    color: #050200;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+}
+
+.inputBox input::-webkit-input-placeholder{
+    position: relative;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #f4e4b5;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a{
+    margin: 20px 0;
+    font-size: 15px;
+    color: #00ffff;
+    text-decoration: none;
+}
+
+.links a:hover,
+.links a:nth-child(2){
+    color: #256bf7;
+}
+
+input[type="submit"]{
+    border: none;
+    outline: none;
+    background: #f4e4b5;
+    padding: 15px 10px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input[type="submit"]:active{
+    opacity: 0.4;
+}
